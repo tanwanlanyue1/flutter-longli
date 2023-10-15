@@ -1,0 +1,393 @@
+name: flutter_widget_one
+description: This is a component editor
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+  #状态管理
+  provider: ^3.0.0+1
+  #视频播放
+  video_player: ^0.10.1+6
+  #轻提示
+  toast: ^0.1.5
+  #网络请求
+  dio: ^2.1.13
+  #屏幕适配
+  flutter_screenutil: ^0.5.3
+  #轮播
+  flutter_swiper: ^1.1.6
+  #  省市三级联动
+  city_pickers: ^0.1.30
+  # 照相
+  image_picker: ^0.6.1+4
+  #裁剪图片
+  image_cropper: ^1.1.0
+  #本地存储
+  shared_preferences: ^0.5.3+4
+  #加载页等待动画
+  flutter_spinkit: ^4.0.0
+  #微信
+  fluwx: ^1.1.1
+  #下拉刷新
+  flutter_easyrefresh: ^2.0.5
+  #日期选择
+  flutter_cupertino_date_picker: ^1.0.12
+  #评分控件
+  rating_bar: ^0.2.0
+  #视频
+  chewie: ^0.9.8
+  #下拉二楼
+  pull_to_refresh: ^1.5.6
+  #扫描二维码
+  flutter_qr_reader: ^1.0.2
+  #国际化
+  flutter_localizations:
+    sdk: flutter
+  #网络请求
+  http: ^0.12.0+2
+  #  滑动删除
+  flutter_slidable: ^0.5.4
+  #  交错动画
+  flutter_staggered_animations: ^0.1.2
+  #  翻转
+  flip_card: ^0.4.4
+  #   刮刮卡
+  scratcher: ^1.2.1
+  #  查看路径
+  path_provider: ^1.4.0
+  #html富文本
+  flutter_widget_from_html_core: ^0.2.5
+  #Flutter权限处理程序插件
+  permission_handler: ^4.0.0
+  #  用于在移动平台中启动URL。支持iOS和Android
+  url_launcher: ^5.2.5
+  #  缓存图片
+  cached_network_image: ^1.1.3
+  #  极光推送
+  jpush_flutter: 0.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #  - images/a_dot_burr.jpeg
+  #  - images/a_dot_ham.jpeg
+  assets:
+    - images/image1.png
+    - images/image2.png
+    - images/image3.png
+    - images/image4.png
+    - images/delete.png
+    - images/minut.png
+    - images/down.png
+    - images/git.png
+    - images/up.png
+    - images/card.png
+    - images/A.png
+    - images/star.png
+    - images/star_no.png
+    - images/adds.jpg
+    - images/mei.jpg
+    - images/mei2.jpg
+    - images/weixin1.jpg
+    - images/weixin2.jpg
+    - images/CST.gif
+    - images/shop.gif
+    - images/service1-icon.png
+    - images/service2-icon.png
+    - images/service3-icon.png
+    - images/service4-icon.png
+    - images/service5-icon.png
+    - images/service6-icon.png
+    - images/service7-icon.png
+    - images/service8-icon.png
+    - images/service9-icon.png
+    - images/service10-icon.png
+    - images/service11-icon.png
+    - images/service12-icon.png
+    - images/locker.png
+    - images/Vip.png
+    - images/uservip_btn.png
+    - images/user_crown.png
+    - images/starry.png
+    - images/sign_in.png
+    - images/word.png
+    - images/setting-icon.png
+    - images/matrix.png
+    - images/game.png
+    - images/figure.png
+#订单
+    - images/myOrder/afterSale.png
+    - images/myOrder/consignee.png
+    - images/myOrder/deliverGoods.png
+    - images/myOrder/evaluate.png
+    - images/myOrder/obligation.png
+#首页分类
+    - images/homePage/discountCoupon.png
+    - images/homePage/seckill.png
+    - images/homePage/bargain.png
+    - images/homePage/groupBooking.png
+    - images/homePage/favorite.png
+    - images/homePage/footprint.png
+    - images/homePage/integral.png
+    - images/homePage/ceremony.png
+    - images/homePage/interspace.png
+    - images/homePage/FM.png
+    - images/homePage/service.png
+    - images/homePage/help.png
+#首页未登录及无会员
+    - images/homePage/common/common.png
+    - images/homePage/common/common1.png
+    - images/homePage/common/common2.png
+    - images/homePage/common/common3.png
+    - images/homePage/common/common4.png
+    - images/homePage/common/common5.png
+    - images/homePage/common/common6.png
+    - images/homePage/common/common7.png
+    - images/homePage/common/common8.png
+    - images/homePage/common/common9.png
+    - images/homePage/common/common10.png
+    - images/homePage/common/common11.png
+    - images/homePage/common/common12.png
+    - images/homePage/common/common13.png
+    - images/homePage/common/common14.png
+    - images/homePage/common/common15.png
+    - images/homePage/common/common16.png
+    - images/homePage/common/common17.png
+    - images/homePage/common/common18.png
+    - images/homePage/common/common19.png
+    - images/homePage/common/common20.png
+    - images/homePage/common/common21.png
+    - images/homePage/commons.png
+    - images/homePage/share.png
+    - images/homePage/left.png
+#发现
+    - images/discover/discover1.jpg
+    - images/discover/discover2.png
+    - images/discover/discover3.png
+    - images/discover/discover4.png
+    - images/discover/discover5.png
+    - images/discover/discover6.png
+    - images/discover/discover7.png
+    - images/discover/discover8.png
+    - images/discover/discover9.png
+    - images/discover/discover10.png
+    - images/discover/discover11.png
+    - images/discover/discover12.png
+    - images/discover/discover13.png
+    - images/discover/discover14.png
+    - images/discover/frame.png
+    - images/discover/heart.png
+    - images/discover/heart1.png
+    - images/discover/session.png
+    - images/discover/share.png
+    - images/discover/sign.png
+#设置的背景页 background.jpg
+    - images/setting/background.jpg
+    - images/setting/background.png
+    - images/setting/bgcolor.png
+    - images/setting/log.png
+    - images/setting/e-mail.png
+    - images/setting/wx.png
+    - images/setting/lable.png
+    - images/setting/front.png
+    - images/setting/verso.png
+    - images/setting/encrypt.png
+    - images/setting/none.png
+    - images/setting/loading.gif
+    - images/setting/Top.png
+    - images/setting/about.png
+    - images/setting/leftArrow.png #左箭头
+    - images/setting/lamp.png
+    - images/setting/ic_update_bg.png
+    - images/setting/add.png #加号
+    - images/setting/adds.jpg #加号
+#积分商城
+    - images/integral/estimate.png
+    - images/integral/friend.png
+    - images/integral/money.png
+    - images/integral/discount.png
+    - images/integral/product.png
+    - images/integral/star.png
+    - images/integral/sign.png
+    - images/integral/head.png
+    - images/integral/none.png
+    - images/integral/like.png
+    - images/integral/like1.png
+    - images/bottom/bottom.png #底部标签栏
+    - images/bottom/bottom1.png
+    - images/bottom/bottom2.png
+    - images/bottom/bottom3.png
+    - images/bottom/bottom4.png
+    - images/bottom/bottom5.png
+    - images/bottom/bottom6.png
+    - images/bottom/bottom7.png
+#收货地址
+    - images/site/site.png
+    - images/site/site1.png
+    - images/site/noGoods.png #购物车无商品
+    - images/site/autonym.png #无实名认证
+    - images/site/noAddress.png #无地址
+# 心情卡
+    - images/moods/mood1.png
+    - images/moods/mood2.png
+    - images/moods/mood3.png
+    - images/moods/mood4.png
+    - images/moods/mood5.png
+    - images/moods/mood6.png
+    - images/moods/mood7.png
+    - images/moods/mood8.png
+    - images/moods/mood9.png
+    - images/moods/gift.png
+    - images/moods/LOGO.png
+    - images/moods/begin.png
+    - images/moods/bgColor.png
+    - images/moods/mood_cat.png
+    # 订单
+    - images/order/service.png #客服
+    - images/order/stateless.png #无状态
+    - images/order/all.png #无全部订单
+    - images/order/evaluate.png #无全部订单
+    - images/order/camera.png #相机
+    - images/order/quit.png
+    - images/order/redPackets.png
+    - images/order/cry.png
+    - images/order/logistics.png
+#商城
+    - images/shop/classify.png
+    - images/shop/news.png
+    - images/shop/search.png
+    - images/shop/mistake.png
+    - images/shop/toWhom.png
+    - images/shop/delete.png
+    - images/shop/shopIcon.png
+    - images/shop/mony.png
+    - images/shop/checkMark.png
+    - images/shop/screen.png
+    - images/shop/shadow.png
+#注册
+    - images/register/left.png
+    - images/register/wx.png
+    - images/register/slot.png  #无足迹
+# 商品详情
+    - images/collect/collect.png
+    - images/collect/collect1.png
+    - images/collect/collect2.png
+    - images/collect/collect3.png
+    - images/collect/collect4.png
+    - images/collect/collect5.png
+    - images/collect/collect6.png
+    - images/collect/collect7.png
+    - images/collect/collect8.png
+    - images/collect/collect9.png
+    - images/collect/bulb.png
+    - images/collect/bulb1.png
+#优惠券
+    - images/discount/discount.png
+    - images/discount/use.png
+    - images/discount/use1.png
+    - images/discount/use2.png
+    - images/discount/discountCoupon.png
+    - images/discount/articleNone.png
+    - images/discount/redPackets.png
+    - images/discount/red.png
+    - images/discount/draw.png
+#物流
+    - images/logistics/logistics.png
+    - images/logistics/logistics1.png
+    - images/logistics/logistics2.png
+    - images/logistics/logistics3.png
+    - images/logistics/logistics4.png
+    - images/logistics/logistics5.png
+    - images/logistics/logistics6.png
+    - images/logistics/transport.png
+    - images/logistics/conversation.png
+    - images/discount/countOne.png
+    - images/discount/countTwo.png
+#会员中心
+    - images/member/vip.png
+    - images/member/share.png
+    - images/member/vipCard.png
+    - images/member/vipCard1.png
+    - images/member/vipLog.png
+    - images/member/exclusive.png
+    - images/member/vip1.png
+    - images/member/vip2.png
+    - images/member/vip3.png
+    - images/member/vip4.png
+    - images/member/vip5.png
+    - images/member/vip6.png
+    - images/member/vip7.png
+    - images/member/vip8.png
+    - images/member/quarter.png
+    - images/member/vipLogon.png
+    - images/member/dredge.png
+    - images/member/select.png
+    - images/member/select1.png
+    - images/member/select2.png
+    - images/member/account.png
+    - images/member/renew.png
+    - images/member/renew1.png
+    - images/member/help.png
+  fonts:
+    - family: 思源
+      fonts:
+        - asset: fonts/思源黑体.ttf
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
